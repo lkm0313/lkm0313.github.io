@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사랑해</title>
+
+    <link rel="shortcut icon" href="https://i.pinimg.com/736x/10/6f/d0/106fd00ec2fde889630e6403b95912f3.jpg">
+
+    <meta property="og:image" content="https://mblogthumb-phinf.pstatic.net/MjAyNjA3MTVfNjAg/MDAxNzg0MDQ4NTUyMDU0.WQpJtU3TFd0tCtbQYeBd-7O75SsrKYtIAk4RzLPoikUg.5zfjgTB7dd4Vo1KFTtIMagowF33ilGjE6oW62fJg5rIg.JPEG/output%EF%BC%BF1725403362.jpg?type=w800">
+    <meta property="og:title" content="경민이의 카드">
+    <meta property="og:description" content="I LOVE YOU">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Poor Story', cursive;
+        }
+
+        body {
+            background-color: #9b070f;
+        }
+
+        .envelope {
+            width: 200px;
+            height: 200px;
+            background-image: url(https://pngimg.com/uploads/envelope/envelope_PNG18366.png);
+            background-size: cover;
+            background-position: center;
+            margin: 200px auto 0px auto;
+            cursor: pointer;
+        }
+
+        .envelope-msg {
+            color: white;
+            text-align: center;
+        }
+
+        .letter-close {
+            display: block;
+        }
+
+        .letter-open {
+            display: none;
+        }
+
+        .rtan {
+            background-color: white;
+            width: 200px;
+            height: 200px;
+            margin: 100px auto 0px auto;
+            border-radius: 100px;
+            border: 5px solid white;
+            box-shadow: 0px 0px 10px 0px white;
+            background-image: url(https://mblogthumb-phinf.pstatic.net/MjAyNjA3MTVfMTgx/MDAxNzg0MDQ2OTUxNDcy.qwHG6Ld133m1XKKz19saaPbphWAX2sk7gfAuZXo0Fssg.JI8Hp1fydXxlghIAytkNobwf5VXNwNcZXPrNtJlNKRcg.JPEG/output%EF%BC%BF4223684543.jpg?type=w800);
+            /* 삭제 url http://www.zpat.info/?image-del=LFyxurNzFEBSvBQ */
+            background-size: cover;
+            background-position: center;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+            margin-top: 30px;
+        }
+
+        .msgbox {
+            background-color: ivory;
+            width: 400px;
+            margin: auto;
+            color: brown;
+            padding: 30px;
+            font-size: 20px;
+            line-height: 30px;
+            box-shadow: 0px 0px 10px 0px white;
+        }
+
+        .from {
+            text-align: right;
+            margin-bottom: 0;
+        }
+
+        @media screen and (max-width: 760px) {
+            .msgbox {
+                width: 300px;
+                padding: 20px;
+            }
+
+            .rtan {
+                width: 150px;
+                height: 150px;
+                margin: 40px auto 0px auto;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            .envelope {
+                margin: 150px auto 0px auto;
+            }
+        }
+    </style>
+
+    
+    <script>
+        function open_letter() {
+            document.getElementsByClassName("letter-close")[0].style.display = 'none'
+            document.getElementsByClassName("letter-open")[0].style.display = 'block'
+        }
+        
+    </script>
+</head>
+
+<body>
+    <div class="letter-close">
+        <div class="envelope" onclick="open_letter()"></div>
+        <h2 class="envelope-msg">봉투를 열어봐!</h2>
+    </div>
+
+    <div class="letter-open">
+        <div class="rtan" onclick="go_rtan()"></div>
+        <h1>2026년 상반기 수고 많았어!</h1>
+        <div class="msgbox">To. 밍서 <br />
+            민서랑 함께라서 <br />
+            민서 덕분에 너무나 행복했어 <br />
+            남은 6개월도 나랑 재밌게 놀자 <br />
+            울애기 내가 많이 사랑해애 <br />
+            <p class="from">2026.07.15 From. 쨈갱</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
